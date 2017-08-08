@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,YAAQ;EACN,MAAM,EAAE,OAAO",
+"sources": ["../scss/row.scss"],
+"names": [],
+"file": "row.css"
+}
