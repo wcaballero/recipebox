@@ -1,17 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import MyAwesomeReactComponent from './MyAwesomeReactComponent';
+import { Button, Panel, Collapse, Well, Accordion } from 'react-bootstrap';
+
 
 class App extends Component {
+
+
+
   render() {
+    const title = (
+      <span className="title">A title with css</span>
+    );
+    
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="App container well">
+        <Accordion>
+          <Panel header={title} eventKey="0" bsStyle="success">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </Panel>
+          <Panel header="Name of Header" eventKey="1" bsStyle="success">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </Panel>
+        </Accordion>
+
+
       </div>
     );
   }
